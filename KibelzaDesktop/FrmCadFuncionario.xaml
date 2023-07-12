@@ -1,0 +1,41 @@
+﻿<Window x:Name="FrmCadFuncionario1" x:Class="KibelzaDesktop.FrmCadFuncionario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KibelzaDesktop"
+        mc:Ignorable="d"
+        Title="Cadastro de Funcionário" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="FrmCadFuncionario1_Loaded">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFB06FAD" Offset="0.137"/>
+            <GradientStop Color="White" Offset="0.893"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="LblCadFuncionário" Content="Cadastro de Funcionário" HorizontalAlignment="Left" Margin="223,20,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="LblNome" Content="Nome" HorizontalAlignment="Left" Margin="40,111,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblEmail" Content="E-mail" HorizontalAlignment="Left" Margin="40,153,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblSenha" Content="Senha" HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblDataCadastro" Content="Data de Cadastro" HorizontalAlignment="Left" Margin="338,200,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblNivel" Content="Nivel" HorizontalAlignment="Left" Margin="40,237,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblStatus" Content="Status" HorizontalAlignment="Left" Margin="338,242,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblEmpresa" Content="Empresa" HorizontalAlignment="Left" Margin="40,279,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="TxtNome" HorizontalAlignment="Left" Height="37" Margin="120,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="587" FontSize="20" IsEnabled="False" KeyDown="TxtNome_KeyDown"/>
+        <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Height="37" Margin="120,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="587" FontSize="20" IsEnabled="False" KeyDown="TxtEmail_KeyDown"/>
+        <TextBox x:Name="TxtSenha" HorizontalAlignment="Left" Height="37" Margin="120,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" FontSize="20" IsEnabled="False" KeyDown="TxtSenha_KeyDown"/>
+        <TextBox x:Name="TxtDataCadastro" HorizontalAlignment="Left" Height="37" Margin="506,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" FontSize="20" IsEnabled="False"/>
+        <ComboBox x:Name="CmbNivel" HorizontalAlignment="Left" Margin="120,242,0,0" VerticalAlignment="Top" Width="213" FontSize="20" IsEnabled="False" SelectionChanged="CmbNivel_SelectionChanged">
+            <ComboBoxItem Content="ADM"/>
+            <ComboBoxItem Content="Nivel1"/>
+            <ComboBoxItem Content="Nivel2"/>
+            <ComboBoxItem Content="Nivel3"/>
+        </ComboBox>
+        <CheckBox x:Name="ChkStatus" Content="Ativo?" HorizontalAlignment="Left" Margin="426,249,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False"/>
+        <ComboBox x:Name="CmbEmpresa" HorizontalAlignment="Left" Margin="120,280,0,0" VerticalAlignment="Top" Width="587" IsEnabled="False" FontSize="20" KeyDown="CmbEmpresa_KeyDown"/>
+        <Button x:Name="BtnNovo" Content="NOVO" HorizontalAlignment="Left" Margin="120,350,0,0" VerticalAlignment="Top" Width="90" FontSize="20" Background="#FF0E0000" Foreground="#FF8D6A95" Height="35" Click="BtnNovo_Click"/>
+        <Button x:Name="BtnSalvar" Content="SALVAR" HorizontalAlignment="Left" Margin="243,350,0,0" VerticalAlignment="Top" Width="90" Foreground="#FF8D6A95" Background="White" FontSize="20" Height="35" IsEnabled="False" Click="BtnSalvar_Click"/>
+        <Button x:Name="BtnLimpar" Content="LIMPAR" HorizontalAlignment="Left" Margin="373,350,0,0" VerticalAlignment="Top" Width="90" Foreground="#FF8D6A95" Background="White" FontSize="20" Height="35" IsEnabled="False" Click="BtnLimpar_Click"/>
+        <Button x:Name="BtnSair" Content="SAIR" HorizontalAlignment="Left" Margin="506,350,0,0" VerticalAlignment="Top" Width="90" FontSize="20" Background="#FF0E0000" Foreground="#FF8D6A95" Height="35" Click="BtnSair_Click"/>
+    </Grid>
+</Window>

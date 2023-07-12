@@ -1,0 +1,26 @@
+﻿<Window x:Name="FrmMenuCadastro" x:Class="KibelzaDesktop.FrmCadastro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KibelzaDesktop"
+        mc:Ignorable="d"
+        Title="Kibeleza - Menu Cadastro" Height="364.445" Width="394.168" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFB06FAD" Offset="0"/>
+            <GradientStop Color="White" Offset="0.887"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BtnCadCliente" Content="Cliente" HorizontalAlignment="Left" Margin="109,56,0,0" VerticalAlignment="Top" Width="173" Height="39" Background="#FF0E0000" Foreground="#FF8D6A95" BorderBrush="{x:Null}" FontSize="24" Click="BtnCadCliente_Click"/>
+        <Button x:Name="BtnCadEmpresa" Content="Empresa" HorizontalAlignment="Left" Margin="109,100,0,0" VerticalAlignment="Top" Width="173" Height="39" Background="#FF0E0000" Foreground="#FF8D6A95" BorderBrush="{x:Null}" FontSize="24"/>
+        <Button x:Name="BtnCadFuncionario" Content="Funcionário" HorizontalAlignment="Left" Margin="109,144,0,0" VerticalAlignment="Top" Width="173" Height="39" Background="#FF0E0000" Foreground="#FF8D6A95" BorderBrush="{x:Null}" FontSize="24" Click="BtnCadFuncionario_Click"/>
+        <Button x:Name="BtnCadServico" Content="Serviço" HorizontalAlignment="Left" Margin="109,188,0,0" VerticalAlignment="Top" Width="173" Height="39" Background="#FF0E0000" Foreground="#FF8D6A95" BorderBrush="{x:Null}" FontSize="24"/>
+        <Button x:Name="BtnCadVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="129,232,0,0" VerticalAlignment="Top" Width="132" Height="39" Background="#FF0E0000" Foreground="#FF8D6A95" BorderBrush="{x:Null}" FontSize="24" Click="BtnCadVoltar_Click"/>
+
+    </Grid>
+</Window>

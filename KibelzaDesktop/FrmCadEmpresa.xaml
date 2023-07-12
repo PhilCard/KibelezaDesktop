@@ -1,0 +1,35 @@
+﻿<Window x:Name="FrmCadEmpresa1" x:Class="KibelzaDesktop.FrmCadEmpresa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KibelzaDesktop"
+        mc:Ignorable="d"
+        Title=" Cadastro de Empresa" Height="425.581" Width="709.302" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFB06FAD" Offset="0.09"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="LblCadEmpresa" Content="Cadastro da Empresa" HorizontalAlignment="Left" Margin="198,50,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="LblNome" Content=" Nome Empresa" HorizontalAlignment="Left" Margin="70,122,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblCnpj" Content="CNPJ" HorizontalAlignment="Left" Margin="70,164,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblRazaoSocial" Content="Razão Social" HorizontalAlignment="Left" Margin="70,206,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblEmail" Content="E-mail" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblDatadeCadastro" Content="Data de Cadastro" HorizontalAlignment="Left" Margin="70,290,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LblStatus" Content="Status" HorizontalAlignment="Left" Margin="438,290,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="TxtNome" HorizontalAlignment="Left" Height="37" Margin="242,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="20" IsEnabled="False" KeyDown="TxtNome_KeyDown"/>
+        <TextBox x:Name="TxtCnpj" HorizontalAlignment="Left" Height="37" Margin="242,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="20" IsEnabled="False" KeyDown="TxtCnpj_KeyDown"/>
+        <TextBox x:Name="TxtRazaoSocial" HorizontalAlignment="Left" Height="37" Margin="242,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="20" IsEnabled="False" KeyDown="TxtRazaoSocial_KeyDown"/>
+        <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Height="37" Margin="242,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="20" IsEnabled="False" KeyDown="TxtEmail_KeyDown"/>
+        <TextBox x:Name="TxtDataCadastro" HorizontalAlignment="Left" Height="37" Margin="242,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="20" IsEnabled="False"/>
+        <CheckBox x:Name="ChkStatus" Content="Ativo?" HorizontalAlignment="Left" Margin="517,296,0,0" VerticalAlignment="Top" FontSize="20" Width="90" IsEnabled="False"/>
+        <Button x:Name="BtnNovo" Content="Novo" HorizontalAlignment="Left" Margin="126,365,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF8D6A95" Background="#FF0E0000" FontSize="20" Click="BtnNovo_Click"/>
+        <Button x:Name="BtnSair" Content="Sair" HorizontalAlignment="Left" Margin="457,365,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF8D6A95" Background="#FF0E0000" FontSize="20" Click="BtnSair_Click"/>
+        <Button x:Name="BtnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="242,365,0,0" VerticalAlignment="Top" Width="80" FontSize="20" Foreground="#FF8D6A95" Background="White" IsEnabled="False" Click="BtnSalvar_Click"/>
+        <Button x:Name="BtnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="352,365,0,0" VerticalAlignment="Top" Width="80" FontSize="20" Foreground="#FF8D6A95" Background="White" IsEnabled="False" RenderTransformOrigin="0.59,0.513"/>
+
+    </Grid>
+</Window>
